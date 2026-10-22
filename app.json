@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Read 2:14",
+    "slug": "read-214",
+    "scheme": "read214",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#070d10",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.bileldhahri.read214"
+    },
+    "android": {
+      "package": "com.bileldhahri.read214",
+      "adaptiveIcon": {
+        "backgroundColor": "#0b1f24",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "name": "Read 2:14",
+      "backgroundColor": "#070d10",
+      "themeColor": "#070d10"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#070d10"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#f2a541"
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": false
+        }
+      ]
+    ]
+  }
+}

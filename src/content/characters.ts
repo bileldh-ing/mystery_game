@@ -1,0 +1,101 @@
+import type { CharId, Character, ThreadId } from '../game/types';
+
+export const AV = {
+  tide: require('../../assets/images/avatars/tide.jpg'),
+  maya: require('../../assets/images/avatars/maya.jpg'),
+  jonah: require('../../assets/images/avatars/jonah.jpg'),
+  walt: require('../../assets/images/avatars/walt.jpg'),
+  brennan: require('../../assets/images/avatars/brennan.jpg'),
+  ivy: require('../../assets/images/avatars/ivy.jpg'),
+  theo: require('../../assets/images/avatars/theo.jpg'),
+  rahman: require('../../assets/images/avatars/rahman.jpg'),
+};
+
+export const CHARACTERS: Record<CharId, Character> = {
+  tide: {
+    id: 'tide',
+    name: 'TIDE',
+    short: 'TIDE',
+    avatar: AV.tide,
+    role: 'Anonymous contact',
+    bio: 'Has a copy of Ivy’s cloud backup. Knows things only someone close to her would know. Won’t say who they are.',
+  },
+  maya: {
+    id: 'maya',
+    name: 'Maya Okafor',
+    short: 'Maya',
+    avatar: AV.maya,
+    role: 'Best friend · barista at The Lantern',
+    bio: 'Ivy’s best friend since primary school. Told police she was home alone the night Ivy vanished.',
+    suspect: true,
+  },
+  jonah: {
+    id: 'jonah',
+    name: 'Jonah Price',
+    short: 'Jonah',
+    avatar: AV.jonah,
+    role: 'Ex-boyfriend · cannery worker',
+    bio: 'Ivy ended things with him a month ago. Hosted the beach bonfire that night. Short fuse.',
+    suspect: true,
+  },
+  walt: {
+    id: 'walt',
+    name: 'Walt Danner',
+    short: 'Walt',
+    avatar: AV.walt,
+    role: 'Harbour master · family friend',
+    bio: '“Uncle Walt.” Harbour master for 22 years, old friend of Ivy’s late mother. Ivy interned in his office this summer.',
+    suspect: true,
+  },
+  brennan: {
+    id: 'brennan',
+    name: 'Sgt. Dale Brennan',
+    short: 'Brennan',
+    avatar: AV.brennan,
+    role: 'Saltmere Police',
+    bio: 'Closed Ivy’s file as a runaway after four days. Plays golf with half the harbour committee.',
+    suspect: true,
+  },
+  ivy: {
+    id: 'ivy',
+    name: 'Ivy Calder',
+    short: 'Ivy',
+    avatar: AV.ivy,
+    role: 'Missing · 19',
+    bio: 'Harbour-office intern, night barista, Dead Air superfan. Her mother died when the ferry Merrow sank six years ago.',
+  },
+  theo: {
+    id: 'theo',
+    name: 'Theo Calder',
+    short: 'Theo',
+    avatar: AV.theo,
+    role: 'Ivy’s brother · 16',
+    bio: 'Ivy’s little brother. Quiet. Hasn’t spoken to anyone since she vanished.',
+  },
+  rahman: {
+    id: 'rahman',
+    name: 'DI Asha Rahman',
+    short: 'DI Rahman',
+    avatar: AV.rahman,
+    role: 'County CID',
+    bio: 'Detective Inspector with the county force. Outside Saltmere’s small circles.',
+  },
+  dad: {
+    id: 'dad',
+    name: 'Martin Calder',
+    short: 'Dad',
+    avatar: AV.ivy,
+    role: 'Ivy’s father',
+    bio: 'Fisherman. Widowed six years.',
+  },
+};
+
+export const THREAD_META: Record<ThreadId, { char: CharId; name: string }> = {
+  tide: { char: 'tide', name: 'TIDE' },
+  maya: { char: 'maya', name: 'Maya Okafor' },
+  jonah: { char: 'jonah', name: 'Jonah Price' },
+  walt: { char: 'walt', name: 'Walt Danner' },
+  brennan: { char: 'brennan', name: 'Sgt. Brennan' },
+  rahman: { char: 'rahman', name: 'DI Rahman · County CID' },
+  ivy: { char: 'ivy', name: 'Ivy' },
+};
